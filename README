@@ -1,0 +1,8 @@
+A simple workflow for pulling data from the Google Ads multi-channel funnels API and performing attribution modelling using Markov Chains.
+
+The RGA package makes it easy to retrieve conversion paths data from Google Analytics. However, there are a couple of caveats.
+
+1. This method uses the pre-installed API credentials for the RGA package. These are shared between everyone who uses RGA across the planet, and daily request numbers are limited. If you want to use this package regularly, you should set up your own API credentials and use those instead.
+
+2. As standard, Google Analytics will only record paths in this report for sessions with a goal completion / conversion. As such 'null' transactions will not be recorded. In order to construct more robust models, a view that records a session as a goal can be used.
+
